@@ -1,3 +1,7 @@
+# Login to the site
+- Username: grader
+- Password: grader
+
 TODO:
 Part 2
 Ben Personal Page
@@ -50,7 +54,7 @@ STEP 8 - README + GoAccess setup
 TODO:
 Checking List:
 - [ ] Names of all members in your team
-- [ ] The password for user "grader" on your Apache server
+- [x] The password for user "grader" on your Apache server
 - [ ] Summary of changes to HTML file in DevTools after compression
 - [ ] Username/password info for logging into the site
 - [ ] `github-deploy.mpeg` or `github-deploy.gif` - showing Github deploy process
