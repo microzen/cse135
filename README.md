@@ -1,11 +1,25 @@
-# Homework 1
+# Homework 1 - 8/10/26
+**Client Side Basics, Site and Server Configuration**
+
+## Names
 - Benjamin Michael
 - Yezhi Wu
+
+## Site Links
 - [https://benyezhi.site/](https://benyezhi.site/)
 - [https://benyezhi.site/members/ben.html](https://benyezhi.site/members/ben.html)
 - [https://benyezhi.site/members/yezhi.html](https://benyezhi.site/members/yezhi.html)
 - [https://benyezhi.site/hw1/hello.php](https://benyezhi.site/hw1/hello.php)
 - [https://benyezhi.site/hw1/report.html](https://benyezhi.site/hw1/report.html)
+
+## Grader Website Login
+- Username: grader
+- Password: grader
+
+## Grader Server Login
+- Username: grader
+- Password: benyezhigrader
+- Private SSH Key: *Included in Gradescope submission*
 
 # Part 1: Basic Apache Configuration
 
@@ -38,9 +52,7 @@ own SSH key which it uses to authenticate and pull files from shared repo. Authe
 ## Step 3: PHP Example Page
 [php-verification.jpg](php-verification.jpg)
 
-## Step 4: Login 
-- Username: grader
-- Password: grader
+[https://benyezhi.site/hw1/hello.php](https://benyezhi.site/hw1/hello.php)
 
 ## Step 5: Compression
 It seems like compression was automatically enabled for our site via mod_deflate (Encoding: gzip). This encoding shrinks the size of the HTML file sent over the web pretty significantly with the tradeoff of requiring more processing for the server to send and client to unpack this encoded file. Considering how barebones our website is right now though this processing time vs. transfer speed tradeoff is not really noticeable. 
@@ -92,3 +104,5 @@ curl -I https://yourdoman.site
 [log-verification.jpg](log-verification.jpg)
 
 [report-verification.jpg](report-verification.jpg)
+
+[https://benyezhi.site/hw1/report.html](https://benyezhi.site/hw1/report.html)
