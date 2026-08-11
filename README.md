@@ -2,17 +2,20 @@
 - Username: grader
 - Password: grader
 
-TODO:
-Part 2
-Ben Personal Page
+# Deployment (Part 2)
+Deployment is fully automated via GitHub Actions which is triggered during every push to main branch. We utilized
+appleboy/scp-action to copy files over SSH to our droplet server. This required making a independent "deploy" user on our server with its
+own SSH key which it uses to authenticate and pull files from shared repo. Authentication information like private key are stored in GitHub Secrets.
 
-TODO:
-Part 3
-STEP 4 - README
----
+# Login (Part 3: Step 4)
+- Username: grader
+- Password: grader
 
-# STEP 6
-Install and Active `mod_security`
+# Compression (Part 3: Step 5)
+It seems like compression was automatically enabled for our site via mod_deflate (Encoding: gzip). This encoding shrinks the size of the HTML file sent over the web pretty significantly with the tradeoff of requiring more processing to send and unpack this encoded file. Considering how barebones our website is right now though this processing time vs. transfer speed tradeoff is not really noticeable. 
+
+# Obscure Identity (Part 3: Step 6)
+Install and Activate `mod_security`
 
 ``` bash
 sudo apt update
